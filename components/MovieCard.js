@@ -2,6 +2,8 @@ import { Box } from '@chakra-ui/react'
 
 export const MovieCard = () => {
   return (
-    <>MovieCard</>
+    <Box bgColor={'tomato'} h={'full'}>
+      
+    </Box>
   )
 }

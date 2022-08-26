@@ -1,4 +1,4 @@
-import { Box,SimpleGrid,Heading,VStack,Text,Center } from '@chakra-ui/react'
+import { Box,SimpleGrid,Heading,VStack,Text,Center,Button } from '@chakra-ui/react'
 
 export const Showcase = () => {
   return (
@@ -22,8 +22,12 @@ export const Showcase = () => {
               <Text>Budget: $100M </Text>
               <Text>Box Office: $145M </Text>
             </VStack>
+          </Center>         
+          <Center>
+          <Button colorScheme={'cyan'} variant='solid' size='lg'>
+            View Details
+          </Button>
           </Center>
-          <Box>{/* Movie Card */}</Box>
         </SimpleGrid>
       </Box>
     </>

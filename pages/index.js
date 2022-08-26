@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <Container maxW="container.lg">
       <Navbar />
-        <Showcase />
+      <Showcase />
       </Container>
       
 
