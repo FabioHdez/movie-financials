@@ -3,10 +3,8 @@ import { Box,Container,SimpleGrid,Input,IconButton,HStack,Flex } from '@chakra-u
 import { FaSearch, FaUserAlt} from 'react-icons/fa'
 export const Navbar = () => {
   return (
-    // give the scroll property to hide when scrolling down:
-    // https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
     
-    <Box w="100%" py={8}>
+    <Box w="100%" pb={8}>
         <HStack justify={'center'}> 
             <ColorModeSwitcher />
             <Input placeholder='Search for a movie' maxW={'4xl'} size='lg' />
