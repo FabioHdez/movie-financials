@@ -1,4 +1,4 @@
-import { Box, SimpleGrid ,Heading,Show, Hide } from "@chakra-ui/react"
+import { Box, SimpleGrid ,Heading,Center, Hide } from "@chakra-ui/react"
 import { MovieCard } from "./MovieCard";
 
 
@@ -9,10 +9,12 @@ export const MovieRow = ({listName}) => {
         {listName}:
       </Heading>
       <SimpleGrid columns={{base:2,md:4}} spacing={3}>
-        <Box h={{base:64,md:80}} bgColor={'tomato'}><MovieCard /></Box>
-        <Box h={{base:64,md:80}} bgColor={'tomato'}><MovieCard /></Box>
-        <Hide below='md'><Box h={{base:64,md:80}} bgColor={'tomato'}><MovieCard /></Box></Hide>
-        <Hide below='md'><Box h={{base:64,md:80}} bgColor={'tomato'}><MovieCard /></Box></Hide>
+        <Center>
+        <Box h={{base:64,md:96}}><MovieCard /></Box></Center>
+        <Center>
+        <Box h={{base:64,md:96}}><MovieCard /></Box></Center>
+        <Center><Hide below='md'><Box h={{base:64,md:96}}><MovieCard /></Box></Hide></Center>
+        <Center><Hide below='md'><Box h={{base:64,md:96}}><MovieCard /></Box></Hide></Center>
       </SimpleGrid >
     </Box>
   );
